@@ -2,7 +2,11 @@
 
 These instructions cover the mechanical and electrical assembly of the ESP32 Smart OLED Display hardware. This project does not include firmware. You are expected to upload or develop your own software using the ESP32 platform of your choice.
 
+## WIP
+
 ## Components Required
+
+Components required can be found [here](./components.md) (list for digikey components.)
 
 ### Required
 - 1 × ESP32 Dev Module (WROOM-32 recommended)
@@ -30,7 +34,7 @@ These instructions cover the mechanical and electrical assembly of the ESP32 Sma
 
 ### 1. PCB Fabrication
 
-- Send the files from `hardware/gerbers/` to a PCB manufacturer (i used [PCBWay](https://www.pcbway.com)).
+- Send the gerber `hardware/gerber.zip` to a PCB manufacturer (i used [PCBWay](https://www.pcbway.com)).
 - Choose 1mm or 1.2mm thickness
 - For sustainability choose HASL Lead free or ENIG (ENIG is absolutely not needed)
 
@@ -48,25 +52,18 @@ These instructions cover the mechanical and electrical assembly of the ESP32 Sma
 
 ### 4. 3D Printed Case
 
-- Print the case file `case/smart_display_case.3mf`. (Print both the back cover and the main case)
+- Print the case file `case/Enclosure.3mf`. (Print both the back cover and the main case)
 - Use PLA or ABS with standard print settings.
-- Insert the assembled PCB and OLED into the case.
-- Secure with screws, hot glue, or pressure fit depending on design.
+- Insert the assembled PCB into the case and glue it in place.
+- Glue the touch sensor (optional) and USB-C connector.
+- Close the housing with glue after you have confirmed that your board works and you have flashed the correct firmware.
 
-### 5. Power Options
-
-- The board can be powered via the ESP32’s micro-USB port.
-- If your use case requires mobility, a LiPo battery and charger module can be added and connected to the VIN/GND rails.
 
 ---
 
 ## Custom Firmware
 
 This hardware supports any firmware platform compatible with ESP32 and SSD1306 OLEDs:
-- Arduino with `Adafruit_SSD1306` and `Wire.h`
-- PlatformIO
-- ESP-IDF
-- CircuitPython or MicroPython
 
 Example features you could add:
 - Display time, temperature, humidity
@@ -81,6 +78,7 @@ Example features you could add:
 - OLED default I2C address is usually `0x3C`.
 - I2C pins are typically GPIO 21 (SDA) and GPIO 22 (SCL) on ESP32.
 - If the touch sensor is not responsive, verify GPIO configuration in your firmware.
+- If you use the ESP32-C3-WROOM-02 module or similar you can connect GPIO 18 and GPIO 19 to the data lines of the Usb C connector for easy reflashing according to the [datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf).
 
 ---
 

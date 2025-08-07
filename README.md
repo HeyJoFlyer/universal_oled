@@ -3,6 +3,7 @@
 ### Free as in Freedom
 
 ## ATTENTION - This repo is WIP!
+## Do not order a pcb yet as the pcb has not been tested.
 
 This repository provides the complete open-source hardware design for a compact, Wi-Fi-capable smart display using an ESP32 and a 128x64 I2C OLED module. The project includes a manufacturable PCB and a 3D-printable case. An optional capacitive touch sensor can be added to the case.
 
