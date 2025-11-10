@@ -1,0 +1,5 @@
+﻿"Index","Quantity","Part Number","Manufacturer Part Number","Description","Customer Reference","Available","Backorder","Unit Price","Extended Price USD"
+"1","1","1965-ESP32-C3-WROOM-02-N4CT-ND","ESP32-C3-WROOM-02-N4","RF TXRX MODULE BT PCB TRACE SMD","","1","0","3.28000","3.28"
+"2","1","296-TLV74033PDBVRCT-ND","TLV74033PDBVR","IC REG LINEAR 3.3V 300MA SOT23-5","","1","0","0.10000","0.10"
+"3","1","1276-1045-1-ND","CL10A475KQ8NNNC","CAP CER 4.7UF 6.3V X5R 0603","","1","0","0.08000","0.08"
+"4","1","1276-CL10B104KB8NNNLCT-ND","CL10B104KB8NNNL","CAP CER 0.1UF 50V X7R 0603","","1","0","0.08000","0.08"

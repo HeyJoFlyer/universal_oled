@@ -1,6 +1,8 @@
 
 ## Components required (sourced from digikey)
 
+You can import the files to digikey from `hardware/digikey.csv`
+
 [ESP32-C3-WROOM-02-N4](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-C3-WROOM-02-N4/14553031) main ESP module, this included Wifi and Bluetooth
 
 [TLV74033PDBVR](https://www.digikey.com/en/products/detail/texas-instruments/TLV74033PDBVR/12642183) cheap 3.3V regulator (max 5V in, which is fine for USB and max 300mA)

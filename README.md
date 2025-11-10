@@ -2,9 +2,6 @@
 
 ### Free as in Freedom
 
-## ATTENTION - This repo is WIP!
-## Do not order a pcb yet as the pcb has not been tested.
-
 This repository provides the complete open-source hardware design for a compact, Wi-Fi-capable smart display using an ESP32 and a 128x64 I2C OLED module. The project includes a manufacturable PCB and a 3D-printable case. An optional capacitive touch sensor can be added to the case.
 
 This project is ideal for developers who want to integrate a small display into smart home interfaces, information kiosks, sensor dashboards, or other embedded projects. Examples include uses with ESPHome for HomeAssistant or weather display.
@@ -17,7 +14,7 @@ This project is ideal for developers who want to integrate a small display into 
 - Compact 3D-printable enclosure
 - USB C power
 - Designed for easy customization and integration
-- Parts sourced from Digikey find list [here](./hardware/digikey.csv)
+- Parts sourced from Digikey find list [here](./hardware/components.md)
 - Display, touch sensor and USB C port sourced from aliexpress
 - PCB ordered from [PCBWay](https://www.pcbway.com)
 
@@ -35,6 +32,7 @@ This project is ideal for developers who want to integrate a small display into 
 - ESP32-WROOM Module (ESP-WROOM-C2)
 - 128x64 OLED display with I2C interface
 - TTP223 Capacitive Touch sensor module (optional)
+- USB C Connector (with 5.1k resistor) for programming and powering the display
 - Soldering equipment
 - 3D printer for case (optional but recommended)
 - PCB

@@ -1,0 +1,5 @@
+*.tar.xz
+fp-info-cache
+*.kicad_prl
+universal_oled.step
+hardware/pcb_source/universal_oled-backups/*
